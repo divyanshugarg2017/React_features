@@ -10,12 +10,16 @@
   padding: 20px;
   font-size: 30px;
   text-align: center;
+  min-width: 100px;
 }
 .grid-item:hover{
     background-color: gray;
   }
 .input_style{
- 
-
+  font-size: 20px;
+  font-weight: 600;
     height: 100px;
+}
+#clear{
+  grid-column: 1/4;
 }
