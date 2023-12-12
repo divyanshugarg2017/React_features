@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import "./todos.css"
 
 const EditTodoForm = ({todos,editTask,todo}) => {
@@ -15,9 +15,11 @@ const EditTodoForm = ({todos,editTask,todo}) => {
   )
 }
 
+
 export default function Todos() {
   const [inputData, setInputData] = useState("")
   const [todos, setTodos] = useState([])
+
 
   const handleTodosInput = (e) => {
     setInputData(e.target.value)
